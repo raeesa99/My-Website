@@ -19,8 +19,8 @@ app.get('/', (req, res) =>{
     res.render('home');
 });
 
-app.get('/1', (req, res) => {
-    res.render('1');
+app.get('/projects', (req, res) => {
+    res.render('projects');
 });
 
 app.get('/2', (req, res) => {

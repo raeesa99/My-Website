@@ -108,4 +108,38 @@ nav{
     position: sticky;
   }
 
-  
+  .projects {
+    padding: 14px 14px;
+    text-align: center;
+    background: #AEC3B0;
+  }
+
+  .projects > a {
+    text-decoration: none;
+  }
+
+  #projectTitle {
+    padding-bottom: 18px;
+  }
+
+  .pTitle {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #124559;
+    text-decoration: underline;
+  }
+
+  .pTitle:hover {
+    opacity: 75%;
+    cursor: pointer;
+  }
+
+  .pImage {
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+
+  .pImage:hover {
+    cursor: pointer;
+    opacity: 75%;
+  }
