@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+html body{
+    padding: 0;
+    margin: 0;
+    background-color: #B7C4DA;
+    width: 100%;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width:70%;
+    margin: auto;
+}
+
+h1{
+    color:#112A46;
+    font-weight: 400;
+    font-size: 45px;
+    margin-top: 3px;
+    text-shadow: 2px 2px 2px #4b75a4;
+}
+
+h2{
+    padding: 3px;
+    margin: 0px 0px 10px 0px;
+    color:#2E4560;
+    font-weight: 500;
+    font-size: 35px;
+    text-shadow: 2px 2px 3px #ffffff;
+}
+
+.dice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+img{
+    border-radius: 15%;
+    box-shadow: 2px 2px 20px 0 #2E4560;
+    width: 40%;
+}
+
+.instructions{
+    border: 2px dotted #2E4560;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 0px;
+    text-align: center;
+    width:45%;
+    position: relative;
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    color:#112A46;
+}
+
+ul{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+li{
+    list-style-type:none;
+    color: #112A46;
+    padding-top: 2px;
+    font-size: 18px;
+    padding-bottom: 3px;
+    width: fit-content;
+    text-align:left;
+    margin: 0px 0px 0px 0px;
+    justify-content:center;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: max-content;
+}
+
+.btn{
+    background-color: #7797beff;
+    border-radius: 4px;
+    padding: 15px;
+    border-style: none;
+    color:#112A46;
+    font-size: 25px;
+    box-shadow: 2px 2px 10px #ffffff;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: 8px 8px 20px #112A46; ;
+}
+
+#total{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 1.5%;
+    border-radius: 4px;
+    border: 2px dotted #112A46;
+    margin-left: 12px;
+}
+
+
+.banner{
+    color:#112A46;
+    font-weight: 400;
+    font-size: 45px;
+    margin-top: 0px;
+    text-shadow: 2px 2px 2px #4b75a4;
+    margin-left: 3px;
+    margin-right: 3pxa;
+}
+
+.playAgain{
+    z-index: 2;
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: block; 
+    border-style: dotted;
+}
+
+#yes, #no {
+    background-color: #7797beff;
+    border-radius: 4px;
+    padding: 10px;
+    border-style: none;
+    color:#112A46;
+    font-size: 25px;
+    box-shadow: 2px 2px 10px #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: max-content;
+    text-align: center;
+    display: block;
+    
+}
+
+#yes:hover{
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: 8px 8px 20px #112A46; ;
+}
+
+#no:hover{
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: 8px 8px 20px #112A46;
+
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Roll the Dice</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lets play Roll The Dice</h1>
+        <h2 id="player"></h2>
+        <div class="instructions">
+            <p>Rules:</p>
+            <ul>
+                <li>Click the button to roll the dice.</li>
+                <li>The number it lands on will be added to your total.</li>
+                <li>When your total reaches or exceeds 15, <strong>you win!</strong></li>
+                <li><strong>However... </strong>If at any point it lands on a 6, it's<strong> game over</strong> and your total will be reset to 0.</li>
+                <li></li>
+                <li><strong>Good Luck!</strong></li>
+
+            </ul>
+        </div>
+        <div class="dice">
+            <img id="one" src="images/1.png" alt="Dice shows 1">
+        </div>
+        <div class="game">
+        <button type="button" class="btn" id="btn"> Roll the Dice </button>
+        <div class="banner" id="banner">
+            <h1 id="bannerText"></h1>
+        </div>
+        <p id="total">Total Score: 0</p>
+        </div>
+        <div class = "playAgain">
+            <h1 id="message"></h1>
+            <div class="btns">
+                <btn id="yes"></btn>
+                <btn id="no"></btn>
+            </div>
+        </div>
+    </div>
+<script>
+        let imgs = ["images/1.png",
+            "images/2.png",
+            "images/3.png",
+            "images/4.png",
+            "images/5.png",
+            "images/6.png"
+            ];
+
+const dice = document.getElementsByClassName('dice');
+let btn = document.getElementById('btn');
+let yes = document.getElementById('yes');
+let no = document.getElementById('no');
+let total = 0;
+let gameEnded = false;
+
+btn.addEventListener("click", roll);
+
+function main() {
+  let name = prompt("Hey, choose your player name");
+  name1 = name.charAt(0).toUpperCase() + name.slice(1);
+  document.getElementById("player").innerHTML = `Player: ${name1}`;
+}
+
+function roll() {
+    let random = Math.ceil(Math.random()*6)
+    total = total + random;
+    document.querySelector('#one').setAttribute("src", imgs[random - 1]);
+
+    if (random == 6) {
+        document.getElementById("bannerText").textContent = "A 6?! Game Over";
+        gameEnded = true;
+
+    } else if (total >= 15) {
+        document.getElementById("bannerText").textContent = `${total}... You win!`;
+        gameEnded = true;
+    };
+
+    document.querySelector("#total").innerHTML = "Total Score: " + total;
+
+     if (!gameEnded) {
+      return;
+     };
+
+     btn.removeEventListener("click", roll)
+     document.getElementById('message').textContent = `Would you like to play again  ${name1}?`;
+     yes.textContent = "Yes"
+     no.textContent = "No"
+     yes.addEventListener("click", play);
+     no.addEventListener("click", leave);
+};
+
+main();
+
+function play() {
+        btn.addEventListener("click", roll)  
+        document.getElementById("bannerText").textContent = ``;
+        document.getElementById('message').textContent = ``;
+        yes.textContent = ""
+        no.textContent = ""
+        total = 0;
+        document.querySelector("#total").innerHTML = "Total Score: ";
+        gameEnded = false;
+};
+
+function leave() {
+    alert(`Thanks for playing ${name1}`)
+        location.reload();
+};
+</script>
+</body>
+</html>

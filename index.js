@@ -35,6 +35,22 @@ app.get('/4', (req, res) => {
     res.render('4');
 });
 
+app.get('/pointplotter', (req, res) => {
+    res.render('pointplotter');
+});
+
+app.get('/sierpinski', (req, res) => {
+    res.render('sierpinski');
+});
+
+app.get('/dicegame', (req, res) => {
+    res.render('dicegame');
+});
+
+app.get('/2playerdicegame', (req, res) => {
+    res.render('2playerdicegame');
+});
+
 
 app.listen(3030, () => {
     console.log('app listening on http://localhost:3030');
