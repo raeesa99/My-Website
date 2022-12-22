@@ -109,7 +109,7 @@ nav{
   }
 
   .projects {
-    padding: 14px 14px;
+    padding: 55px;
     text-align: center;
     background: #AEC3B0;
   }
@@ -124,7 +124,7 @@ nav{
 
   .pTitle {
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 24px;
     color: #124559;
     text-decoration: underline;
   }
@@ -137,9 +137,18 @@ nav{
   .pImage {
     border-radius: 10px;
     margin-bottom: 12px;
+    box-shadow: 3px 3px 10px #01161E;
+    filter:opacity(75%)
   }
 
   .pImage:hover {
     cursor: pointer;
-    opacity: 75%;
+    filter: none;
+  }
+
+  .pDescription {
+    text-align: center;
+    padding-left: 28%;
+    padding-right: 28%;
+    color: #598392;
   }
