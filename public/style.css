@@ -41,13 +41,13 @@ nav{
 
   nav > ul > li {
     list-style-type: none;
-    color: #124559;
+    color:#AEC3B0;
     margin: 0 0.3rem;
     display: block;
   }
 
   nav > ul > li > a:hover {
-    color: #AEC3B0 ;
+    color:#124559;
     cursor: pointer;
   }
 
@@ -108,21 +108,21 @@ nav{
     position: sticky;
   }
 
-  .projects {
+  .projects, .movies {
     padding: 55px;
     text-align: center;
-    background: #AEC3B0;
   }
 
-  .projects > a {
+  .projects > a, .movies > a {
     text-decoration: none;
   }
 
-  #projectTitle {
+  #projectTitle, #moviesTitle {
     padding-bottom: 18px;
+    color:#AEC3B0
   }
 
-  .pTitle {
+  .pTitle, .mTitle {
     padding-top: 10px;
     font-size: 24px;
     color: #124559;
@@ -130,25 +130,29 @@ nav{
   }
 
   .pTitle:hover {
-    opacity: 75%;
+    color: #598392;
     cursor: pointer;
   }
 
-  .pImage {
+  .pImage, .mImage {
     border-radius: 10px;
     margin-bottom: 12px;
     box-shadow: 3px 3px 10px #01161E;
-    filter:opacity(75%)
+    filter:opacity(80%)
   }
 
-  .pImage:hover {
+  .pImage:hover, .mImage:hover {
     cursor: pointer;
     filter: none;
   }
 
-  .pDescription {
+  .pDescription, .mDescription {
     text-align: center;
-    padding-left: 28%;
-    padding-right: 28%;
+    padding-left: 26%;
+    padding-right: 26%;
     color: #598392;
+  }
+
+  .mDate {
+    color: #AEC3B0;
   }

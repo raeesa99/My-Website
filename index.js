@@ -23,8 +23,8 @@ app.get('/projects', (req, res) => {
     res.render('projects');
 });
 
-app.get('/2', (req, res) => {
-    res.render('2');
+app.get('/movies', (req, res) => {
+    res.render('movies');
 });
 
 app.get('/3', (req, res) => {
