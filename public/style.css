@@ -2,13 +2,18 @@ html, body {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background: #F9FAF3;
+    background: #FAFAF6;
     font-family: 'Comfortaa', cursive;
 } 
 
 .container{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 nav{
@@ -52,13 +57,37 @@ nav{
   }
 
   h1 {
-    padding-top: 25px;
-    margin-top: 50px;
     text-align: center;
+    font-size: 50px;
     color: #01161E;
+    margin-bottom: 25px;
   }
 
   h2 {
     text-align: center;
+    font-size: 28px;
     color: #124559;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contactButton {
+    margin: 16px;
+    padding: 8px;
+  }
+
+  .contact > a {
+    color: #124559;
+  }
+
+  .contact > a:hover {
+    color: #598392 ;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  #getintouch {
+    font-size: 20px;
   }
