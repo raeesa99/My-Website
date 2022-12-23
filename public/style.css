@@ -129,12 +129,12 @@ nav{
     text-decoration: underline;
   }
 
-  .pTitle:hover {
+  .pTitle:hover, .mTitle:hover, .fTitle:hover, .cTitle:hover {
     color: #598392;
     cursor: pointer;
   }
 
-  .pImage, .mImage, .cImage {
+  .pImage, .mImage, .fImage {
     border-radius: 10px;
     margin-bottom: 12px;
     box-shadow: 3px 3px 10px #01161E;
@@ -155,4 +155,10 @@ nav{
 
   .mDate {
     color: #AEC3B0;
+  }
+
+  .cImage {
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 3px 3px 10px #01161E;
   }
