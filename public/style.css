@@ -134,14 +134,14 @@ nav{
     cursor: pointer;
   }
 
-  .pImage, .mImage, .fImage {
+  .pImage, .mImage, .fImage, .cImage {
     border-radius: 10px;
     margin-bottom: 12px;
     box-shadow: 3px 3px 10px #01161E;
     filter:opacity(80%)
   }
 
-  .pImage:hover, .mImage:hover, .fImage:hover  {
+  .pImage:hover, .mImage:hover, .fImage:hover, .cImage:hover  {
     cursor: pointer;
     filter: none;
   }
@@ -157,10 +157,4 @@ nav{
     color: #AEC3B0;
     text-decoration: none;
     font-style: none;
-  }
-
-  .cImage {
-    border-radius: 10px;
-    margin-bottom: 12px;
-    box-shadow: 3px 3px 10px #01161E;
   }
