@@ -108,21 +108,21 @@ nav{
     position: sticky;
   }
 
-  .projects, .movies {
+  .projects, .movies, .flowers {
     padding: 55px;
     text-align: center;
   }
 
-  .projects > a, .movies > a {
+  .projects > a, .movies > a, .flowers > a {
     text-decoration: none;
   }
 
-  #projectTitle, #moviesTitle {
+  #projectTitle, #moviesTitle, #flowersTitle {
     padding-bottom: 18px;
     color:#AEC3B0
   }
 
-  .pTitle, .mTitle {
+  .pTitle, .mTitle, .fTitle {
     padding-top: 10px;
     font-size: 24px;
     color: #124559;
@@ -141,12 +141,12 @@ nav{
     filter:opacity(80%)
   }
 
-  .pImage:hover, .mImage:hover {
+  .pImage:hover, .mImage:hover, .fImage:hover  {
     cursor: pointer;
     filter: none;
   }
 
-  .pDescription, .mDescription {
+  .pDescription, .mDescription, .fDescription {
     text-align: center;
     padding-left: 26%;
     padding-right: 26%;

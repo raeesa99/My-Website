@@ -27,8 +27,8 @@ app.get('/movies', (req, res) => {
     res.render('movies');
 });
 
-app.get('/3', (req, res) => {
-    res.render('3');
+app.get('/flowers', (req, res) => {
+    res.render('flowers');
 });
 
 app.get('/4', (req, res) => {
