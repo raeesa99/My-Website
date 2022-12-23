@@ -108,7 +108,7 @@ nav{
     position: sticky;
   }
 
-  .projects, .movies, .flowers {
+  .projects, .movies, .flowers, .countries {
     padding: 55px;
     text-align: center;
   }
@@ -117,12 +117,12 @@ nav{
     text-decoration: none;
   }
 
-  #projectTitle, #moviesTitle, #flowersTitle {
+  #projectTitle, #moviesTitle, #flowersTitle, #countriesTitle {
     padding-bottom: 18px;
     color:#AEC3B0
   }
 
-  .pTitle, .mTitle, .fTitle {
+  .pTitle, .mTitle, .fTitle, .cTitle {
     padding-top: 10px;
     font-size: 24px;
     color: #124559;
@@ -134,7 +134,7 @@ nav{
     cursor: pointer;
   }
 
-  .pImage, .mImage {
+  .pImage, .mImage, .cImage {
     border-radius: 10px;
     margin-bottom: 12px;
     box-shadow: 3px 3px 10px #01161E;
@@ -146,7 +146,7 @@ nav{
     filter: none;
   }
 
-  .pDescription, .mDescription, .fDescription {
+  .pDescription, .mDescription, .fDescription, .cDescription {
     text-align: center;
     padding-left: 26%;
     padding-right: 26%;

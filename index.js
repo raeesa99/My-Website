@@ -31,8 +31,8 @@ app.get('/flowers', (req, res) => {
     res.render('flowers');
 });
 
-app.get('/4', (req, res) => {
-    res.render('4');
+app.get('/countries', (req, res) => {
+    res.render('countries');
 });
 
 app.get('/pointplotter', (req, res) => {
