@@ -155,6 +155,8 @@ nav{
 
   .mDate {
     color: #AEC3B0;
+    text-decoration: none;
+    font-style: none;
   }
 
   .cImage {
