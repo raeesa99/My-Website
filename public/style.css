@@ -122,31 +122,31 @@ nav{
     color:#AEC3B0
   }
 
-  .pTitle, .mTitle, .fTitle, .cTitle {
+  .title {
     padding-top: 10px;
     font-size: 24px;
     color: #124559;
     text-decoration: underline;
   }
 
-  .pTitle:hover, .mTitle:hover, .fTitle:hover, .cTitle:hover {
+  .title:hover {
     color: #598392;
     cursor: pointer;
   }
 
-  .pImage, .mImage, .fImage, .cImage {
+  .image {
     border-radius: 10px;
     margin-bottom: 12px;
     box-shadow: 3px 3px 10px #01161E;
     filter:opacity(80%)
   }
 
-  .pImage:hover, .mImage:hover, .fImage:hover, .cImage:hover  {
+  .image:hover {
     cursor: pointer;
     filter: none;
   }
 
-  .pDescription, .mDescription, .fDescription, .cDescription {
+  .description{
     text-align: center;
     padding-left: 26%;
     padding-right: 26%;
